@@ -5,6 +5,7 @@ require_once 'app/controller/ErrorController.php';
 require_once 'app/model/Postagem.php';
 require_once 'lib/database/Connexion.php';
 require_once 'vendor/autoload.php';
+require_once 'app/controller/PostController.php';
 
 $template = file_get_contents('app/template/estrutura.html');
 
