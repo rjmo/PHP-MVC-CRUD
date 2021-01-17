@@ -1,0 +1,18 @@
+<section>
+    <div class="container">
+        <h1 class="display-2">Postagens</h1>
+    </div>
+    <div class="container">
+        {% for postagem in Postagens %}
+            <article>
+                <div class="container">
+                    <hr class="my-2">
+                    <div class="jumbotron">
+                        <h2 class="display-3 "><a class="text-decoration-none nav-link text-dark" href="">{{postagem.titulo}}</a></h2>
+                        <p class="lead">{{postagem.conteudo}}</p>
+                    </div>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,12 @@
+{
+    "name": "rafaelmonteiro/php-mvc-crud",
+    "authors": [
+        {
+            "name": "rjmo",
+            "email": "radiorafael@hotmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.2"
+    }
+}
