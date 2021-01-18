@@ -1,13 +1,25 @@
 <section>
     <div class="container">
-            <article>
-                <div class="container">
-                    <hr class="my-2">
-                    <div class="jumbotron">
-                        <h2 class="display-3 ">{{titulo}}</h2>
-                        <p class="lead">{{conteudo}}</p>
-                    </div>
+        <article>
+            <div class="container">
+                <div class="jumbotron">
+                    <h2 class="display-3 ">{{titulo}}</h2>
+                    <p class="lead">{{conteudo}}</p>
                 </div>
-            </article>
+                <div>
+                    <hr class="my-2">
+                    <p class="lead">Comentários</p>
+                    {% if comentarios == false %}
+                        <p>Não há comentários para essa postagem.</p>
+                    {% else %}
+                        {% for comentario in comentarios %}
+                            <p>{{comentario.nome}}:</p>
+                            <p>{{comentario.mensagem}}</p>
+                            <hr class="my-2">
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </article>
     </div>
 </section>

@@ -33,6 +33,9 @@ class Postagem
 
         if (!$resultat) {
             throw new Exception("Não encontrado.");
+        }else{
+            $resultat->comentarios = Comentario::selecionarComentarios($resultat->id);
+            
         }
         return $resultat;
 
