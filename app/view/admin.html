@@ -1,0 +1,27 @@
+<div class="container">
+
+<h1>Gerenciador de conteúdo</h1>
+<a class="float-right nav-link text-dark" href="http://localhost/PHP-MVC-CRUD/?pagina=admin&metodo=create">Criar publicação</a>
+<hr>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Alteração</th>
+        <th scope="col">Deleção</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for postagem in Postagens %}
+      <tr>
+        <th scope="row">{{postagem.id}}</th>
+        <td>{{postagem.titulo}}</td>
+        <td></td>
+        <td><button id="{{postagem.id}}" class="btn btn-danger">Deletar</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</div>

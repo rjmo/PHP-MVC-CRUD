@@ -8,6 +8,7 @@ require_once 'vendor/autoload.php';
 require_once 'app/controller/PostController.php';
 require_once 'app/model/Comentario.php';
 require_once 'app/controller/SobreController.php';
+require_once 'app/controller/AdminController.php';
 
 $template = file_get_contents('app/template/estrutura.html');
 
