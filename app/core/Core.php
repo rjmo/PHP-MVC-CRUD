@@ -3,8 +3,8 @@ class Core
 {
     public function start($urlGet)
     {
+        $acao = 'index';
         if (isset($urlGet['pagina'])) {
-            $acao = 'index';
             $controller = ucfirst($urlGet['pagina'].'Controller');
         } else {
             $controller = 'HomeController';
